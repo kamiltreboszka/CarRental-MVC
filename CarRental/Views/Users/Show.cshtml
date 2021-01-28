@@ -1,0 +1,66 @@
+﻿@model IEnumerable<CarRental.Models.Users>
+@{
+    ViewBag.Title = "Użytkownicy";
+}
+
+<h1>@ViewBag.Title</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Imie
+            </th>
+            <th>
+                Nazwisko
+            </th>
+            <th>
+                Pesel
+            </th>
+            <th>
+                E-mail
+            </th>
+            <th>
+                Numer telefonu
+            </th>
+            <th>
+                Hasło
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>
+                    @user.ID
+                </td>
+                <td>
+                    @user.Name
+                </td>
+                <td>
+                    @user.Surname
+                </td>
+                <td>
+                    @user.Pesel
+                </td>
+                <td>
+                    @user.Email
+                </td>
+                <td>
+                    @user.PhoneNumber
+                </td>
+                <td>
+                    @user.Password
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @Html.ActionLink("Dodaj użytkownika", "AddUser", "Users", new { @class = "btn btn-default" })
+</div>

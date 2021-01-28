@@ -1,0 +1,57 @@
+﻿
+
+@{
+    ViewBag.Title = "LoginForm";
+}
+
+<fieldset>
+
+    <legend>Jesteś zalogowany jako </legend>
+    @if (Session["Login"] != null)
+    {
+        <text>
+            Witaj @Session["UserName"].ToString() @Session["UserSurname"].ToString()
+        </text>
+        <div>
+            <input type='button' value='Wyloguj' id='myButton' class="btn btn-success" onClick='redirectOnClick()' />
+            <script>
+            function redirectOnClick() {
+                document.location = 'Logout';
+            }
+            </script>
+        </div>
+    }
+    else
+    {
+        <text>
+            Nie jesteś zalogowany.
+        </text>
+    }
+</fieldset>
+
+@if (!(Session["Login"] != null))
+{
+    <h2>Panel logowania</h2>
+
+    <form method="post" action="@Url.Action("PerformLogin")">
+        <div class="input-group form-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input class="form-control" type="text" name="Email" placeholder="Email" />
+        </div>
+        <div class="input-group form-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input class="form-control" type="password" name="Password" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn btn-success" style="position:relative; left:250px">Login</button>
+    </form>
+
+    <br>
+    <br>
+
+    <div>
+        <input type='button' value='Zaloguj jako admin' id='myButton' class="btn btn-success" onClick='redirectOnClick()' />
+        <script>
+        function redirectOnClick() {
+            document.location = 'AdminLogin';
+        }
+        </script>
+    </div>
+}

@@ -1,0 +1,208 @@
+2021-01-27 19:18:08,481 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:18:09,078 [11] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:18:11,674 [11] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:18:13,185 [11] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:18:20,290 [11] DEBUG CarRental.Controllers.LoginController - Worker log in
+2021-01-27 19:18:20,309 [14] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:18:22,139 [13] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:18:26,530 [11] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:18:31,585 [12] DEBUG CarRental.Controllers.CarController - Show car page accessed
+2021-01-27 19:18:34,888 [11] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:18:37,610 [15] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:18:43,489 [11] DEBUG CarRental.Controllers.CarController - Show car page accessed
+2021-01-27 19:18:46,842 [11] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:20:55,546 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:20:55,993 [9] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:20:58,233 [9] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:20:59,753 [9] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:21:06,592 [10] DEBUG CarRental.Controllers.LoginController - Worker log in
+2021-01-27 19:21:06,608 [11] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:21:09,307 [10] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:21:10,698 [9] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:21:16,433 [9] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:21:17,648 [11] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:21:19,808 [9] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:21:27,193 [11] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:21:30,260 [9] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:21:33,393 [9] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:21:45,576 [10] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:21:47,361 [10] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:21:48,296 [9] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:29:57,896 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:29:58,341 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:30:00,779 [13] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:30:07,382 [6] DEBUG CarRental.Controllers.LoginController - User log in
+2021-01-27 19:30:07,397 [8] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:30:09,370 [7] DEBUG CarRental.Controllers.CarController - Show car page for user accessed
+2021-01-27 19:30:10,369 [6] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:30:27,355 [9] DEBUG CarRental.Controllers.RentController - Car rent page for users accessed
+2021-01-27 19:30:33,034 [6] DEBUG CarRental.Controllers.RentController - Some problem with car rent
+2021-01-27 19:30:41,202 [13] DEBUG CarRental.Controllers.RentController - User rented car
+2021-01-27 19:30:45,608 [6] DEBUG CarRental.Controllers.RentController - User rents page accessed
+2021-01-27 19:30:52,856 [6] DEBUG CarRental.Controllers.CarController - Show car page for user accessed
+2021-01-27 19:30:56,839 [10] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:30:58,649 [7] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:30:59,239 [8] DEBUG CarRental.Controllers.RentController - User rents page accessed
+2021-01-27 19:30:59,911 [9] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:31:04,912 [6] DEBUG CarRental.Controllers.LoginController - Logout
+2021-01-27 19:31:04,915 [8] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:31:05,857 [7] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:31:07,975 [7] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:31:14,259 [6] DEBUG CarRental.Controllers.LoginController - Worker log in
+2021-01-27 19:31:14,263 [8] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:31:15,584 [6] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:31:17,215 [7] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:31:23,872 [6] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:31:36,865 [7] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:31:50,649 [6] DEBUG CarRental.Controllers.CarController - Car added
+2021-01-27 19:31:52,879 [6] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:31:56,641 [8] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:32:02,010 [6] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:32:05,200 [6] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:32:22,143 [6] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:32:29,810 [6] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:32:38,199 [7] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:32:39,873 [6] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:32:42,911 [8] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:33:09,807 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:33:10,767 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:33:11,696 [7] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:33:13,288 [6] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:33:17,879 [8] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:33:21,335 [6] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:33:23,225 [6] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:33:32,208 [6] DEBUG CarRental.Controllers.LoginController - Logout
+2021-01-27 19:33:32,211 [7] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:33:40,985 [6] DEBUG CarRental.Controllers.CarController - Show car page accessed
+2021-01-27 19:35:46,066 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:35:46,507 [6] DEBUG CarRental.Controllers.CarController - User not login
+2021-01-27 19:35:46,629 [6] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:35:55,905 [7] DEBUG CarRental.Controllers.LoginController - User log in
+2021-01-27 19:35:55,912 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:35:58,313 [6] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:36:02,363 [6] DEBUG CarRental.Controllers.CarController - Show car page for user accessed
+2021-01-27 19:36:03,271 [8] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:36:03,728 [7] DEBUG CarRental.Controllers.RentController - User rents page accessed
+2021-01-27 19:36:05,456 [7] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:36:07,696 [6] DEBUG CarRental.Controllers.CarController - Show car page for user accessed
+2021-01-27 19:36:09,151 [7] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:36:09,727 [6] DEBUG CarRental.Controllers.RentController - User rents page accessed
+2021-01-27 19:36:11,832 [6] DEBUG CarRental.Controllers.LoginController - Logout
+2021-01-27 19:36:11,835 [7] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:36:13,216 [6] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:36:15,550 [13] DEBUG CarRental.Controllers.UsersController - User register page accessed
+2021-01-27 19:36:18,575 [6] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:36:19,591 [7] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:36:26,752 [9] DEBUG CarRental.Controllers.LoginController - Worker log in
+2021-01-27 19:36:26,757 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:36:28,202 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:36:28,818 [6] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:36:30,248 [10] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:36:32,088 [6] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:36:34,928 [7] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:36:36,033 [9] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:36:38,080 [6] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:36:39,576 [7] DEBUG CarRental.Controllers.UsersController - Adding user page accessed
+2021-01-27 19:38:04,881 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:38:05,329 [6] DEBUG CarRental.Controllers.WorkerController - User not login as a worker
+2021-01-27 19:38:05,447 [6] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:38:14,027 [6] DEBUG CarRental.Controllers.LoginController - Worker not log in
+2021-01-27 19:38:14,033 [8] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:38:21,716 [6] DEBUG CarRental.Controllers.LoginController - Worker log in
+2021-01-27 19:38:21,722 [8] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:38:25,618 [9] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:38:28,599 [6] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:38:32,001 [6] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:38:33,128 [8] DEBUG CarRental.Controllers.UsersController - Adding user page accessed
+2021-01-27 19:38:37,384 [6] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:39:40,135 [6] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:40:09,950 [6] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:40:11,640 [6] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:40:18,582 [7] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:40:19,838 [14] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:40:42,608 [6] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:42:11,852 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:42:12,294 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:42:15,803 [7] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:42:21,851 [11] DEBUG CarRental.Controllers.LoginController - User log in
+2021-01-27 19:42:21,867 [7] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:43:12,888 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:43:13,329 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:43:17,634 [6] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:43:24,634 [6] DEBUG CarRental.Controllers.LoginController - User log in
+2021-01-27 19:43:24,650 [8] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:43:31,713 [7] DEBUG CarRental.Controllers.CarController - Show car page for user accessed
+2021-01-27 19:43:33,096 [9] DEBUG CarRental.Controllers.LoginController - Logout
+2021-01-27 19:43:33,099 [6] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:44:22,134 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:44:22,576 [9] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:44:29,769 [9] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:44:35,734 [10] DEBUG CarRental.Controllers.LoginController - User log in
+2021-01-27 19:44:35,750 [10] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:46:28,757 [1] INFO CarRental.MvcApplication - Application started
+2021-01-27 19:46:29,211 [8] DEBUG CarRental.Controllers.WorkerController - User not login as a worker
+2021-01-27 19:46:29,330 [8] DEBUG CarRental.Controllers.LoginController - Login page for worker accessed
+2021-01-27 19:46:39,424 [9] DEBUG CarRental.Controllers.LoginController - Worker log in
+2021-01-27 19:46:39,432 [8] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:46:45,858 [8] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:46:46,919 [12] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:46:50,255 [12] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:46:51,239 [8] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:47:39,125 [12] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:47:41,983 [8] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:47:42,935 [13] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:47:44,750 [8] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:47:47,254 [8] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:47:48,342 [12] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:48:51,789 [8] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:48:53,143 [11] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:48:57,295 [8] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:48:58,541 [8] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:49:57,781 [15] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:50:20,949 [14] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:50:31,477 [12] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:50:33,047 [12] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:50:34,526 [12] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:50:35,254 [12] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:50:36,965 [12] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:50:39,229 [13] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:50:41,030 [12] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:52:04,712 [12] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:52:06,400 [12] DEBUG CarRental.Controllers.CarController - Adding car page accessed
+2021-01-27 19:52:07,382 [13] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:52:08,184 [26] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:52:09,630 [15] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:52:49,349 [11] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:52:52,031 [12] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:53:12,581 [11] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:53:15,015 [12] DEBUG CarRental.Controllers.RentController - Adding rent page accessed
+2021-01-27 19:53:17,077 [12] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:53:18,374 [13] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:53:19,326 [11] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:53:20,422 [12] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:53:21,254 [11] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:53:22,117 [13] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:53:26,093 [11] DEBUG CarRental.Controllers.RentController - Show rents page accessed
+2021-01-27 19:53:26,598 [13] DEBUG CarRental.Controllers.WorkerController - Show page accessed
+2021-01-27 19:53:27,702 [15] DEBUG CarRental.Controllers.WorkerController - Adding worker page accessed
+2021-01-27 19:53:31,541 [11] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:53:32,382 [13] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:53:32,965 [15] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:53:33,703 [11] DEBUG CarRental.Controllers.UsersController - Adding user page accessed
+2021-01-27 19:53:35,093 [14] DEBUG CarRental.Controllers.UsersController - Show users page accessed
+2021-01-27 19:53:36,438 [11] DEBUG CarRental.Controllers.CarController - Show car page for worker accessed
+2021-01-27 19:53:37,845 [15] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:53:39,400 [14] DEBUG CarRental.Controllers.CarController - Show car page accessed
+2021-01-27 19:53:40,838 [11] DEBUG CarRental.Controllers.LoginController - Logout
+2021-01-27 19:53:40,842 [13] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:53:41,975 [11] DEBUG CarRental.Controllers.LoginController - Login page accessed
+2021-01-27 19:53:46,713 [11] DEBUG CarRental.Controllers.LoginController - User log in
+2021-01-27 19:53:46,717 [15] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:53:49,295 [14] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:53:50,327 [13] DEBUG CarRental.Controllers.CarController - Show car page for user accessed
+2021-01-27 19:53:51,862 [11] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:53:56,206 [11] DEBUG CarRental.Controllers.RentController - User rents page accessed
+2021-01-27 19:53:57,686 [15] DEBUG CarRental.Controllers.CarController - Show select cars page accessed
+2021-01-27 19:54:00,567 [11] DEBUG CarRental.Controllers.LoginController - Logout
+2021-01-27 19:54:00,570 [13] DEBUG CarRental.Controllers.HomeController - Home page accessed
+2021-01-27 19:54:01,448 [11] DEBUG CarRental.Controllers.CarController - Show car page accessed

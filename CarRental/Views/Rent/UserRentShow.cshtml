@@ -1,0 +1,60 @@
+﻿
+@model IEnumerable<CarRental.Models.Rent>
+@{
+    ViewBag.Title = "Wypozyczenia";
+}
+
+<h1>@ViewBag.Title @Session["UserName"].ToString() @Session["UserSurname"].ToString()</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID Wypozyczenia
+            </th>
+            <th>
+                ID Samochodu
+            </th>
+            <th>
+                ID Osoby
+            </th>
+            <th>
+                Kwota
+            </th>
+            <th>
+                Data wypozyczenia
+            </th>
+            <th>
+                Data oddania
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rent in Model)
+        {
+            <tr>
+                <td>
+                    @rent.IdWypozyczenia
+                </td>
+                <td>
+                    @rent.IdSamochodu
+                </td>
+                <td>
+                    @rent.IdOsoby
+                </td>
+                <td>
+                    @rent.Kwota
+                </td>
+                <td>
+                    @rent.DataWypozyczenia.ToString("dd/MM/yyyy")
+                </td>
+                <td>
+                    @rent.DataOddania.ToString("dd/MM/yyyy")
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
