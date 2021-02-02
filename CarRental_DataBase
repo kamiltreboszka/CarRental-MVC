@@ -1,0 +1,300 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 9.4.10
+-- Dumped by pg_dump version 9.5.5
+
+-- Started on 2021-02-02 03:10:41
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SET check_function_bodies = false;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 1 (class 3079 OID 11855)
+-- Name: plpgsql; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
+
+
+--
+-- TOC entry 2023 (class 0 OID 0)
+-- Dependencies: 1
+-- Name: EXTENSION plpgsql; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
+
+
+SET search_path = public, pg_catalog;
+
+--
+-- TOC entry 189 (class 1255 OID 32938)
+-- Name: checkuser(character varying, character varying); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION checkuser(checkemail character varying, checkhaslo character varying) RETURNS boolean
+    LANGUAGE plpgsql
+    AS $$
+declare 
+	cnt int;
+begin
+	select count(*) into cnt from uzytkownik where email = checkemail and haslo = checkhaslo;
+	if cnt = 1 then return true;
+	else return false;
+	end if;
+end
+$$;
+
+
+ALTER FUNCTION public.checkuser(checkemail character varying, checkhaslo character varying) OWNER TO postgres;
+
+--
+-- TOC entry 190 (class 1255 OID 32939)
+-- Name: checkworker(character varying, character varying); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION checkworker(checkemail character varying, checkpassword character varying) RETURNS boolean
+    LANGUAGE plpgsql
+    AS $$
+declare 
+	cnt int;
+begin
+	select count(*) into cnt from pracownik where email = checkemail and haslo = checkpassword;
+	if cnt = 1 then return true;
+	else return false;
+	end if;
+end
+$$;
+
+
+ALTER FUNCTION public.checkworker(checkemail character varying, checkpassword character varying) OWNER TO postgres;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 174 (class 1259 OID 32913)
+-- Name: pracownik; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE pracownik (
+    id integer NOT NULL,
+    imie character varying(30),
+    nazwisko character varying(50),
+    haslo character varying(8),
+    email character varying(100),
+    pesel character varying(11),
+    telefon character varying(9)
+);
+
+
+ALTER TABLE pracownik OWNER TO postgres;
+
+--
+-- TOC entry 175 (class 1259 OID 32918)
+-- Name: samochod; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE samochod (
+    id integer NOT NULL,
+    marka character varying(30),
+    model character varying(30),
+    rok character varying(4),
+    paliwo character varying(10),
+    cenadobowa double precision
+);
+
+
+ALTER TABLE samochod OWNER TO postgres;
+
+--
+-- TOC entry 173 (class 1259 OID 32908)
+-- Name: uzytkownik; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE uzytkownik (
+    id integer NOT NULL,
+    imie character varying(30),
+    nazwisko character varying(50),
+    haslo character varying(8),
+    email character varying(100),
+    pesel character varying(11),
+    telefon character varying(9)
+);
+
+
+ALTER TABLE uzytkownik OWNER TO postgres;
+
+--
+-- TOC entry 176 (class 1259 OID 32923)
+-- Name: wypozyczenie; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE wypozyczenie (
+    idwypozyczenia integer NOT NULL,
+    idsamochodu integer,
+    idosoby integer,
+    kwota double precision,
+    datawypozyczenia date,
+    dataoddania date
+);
+
+
+ALTER TABLE wypozyczenie OWNER TO postgres;
+
+--
+-- TOC entry 2013 (class 0 OID 32913)
+-- Dependencies: 174
+-- Data for Name: pracownik; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY pracownik (id, imie, nazwisko, haslo, email, pesel, telefon) FROM stdin;
+1	Kamil	Treboszka	KamTrePr	kamil.treboszka@gmail.com	98070304132	883440753
+2	Patryk	Kowalczuk	PatKow55	patryk.kowalczuk@gmail.com	92082636231	695192606
+3	Mateusz	Kaczor	MatKacPr	mateusz.kaczor@gmail.com	99042704132	804772481
+\.
+
+
+--
+-- TOC entry 2014 (class 0 OID 32918)
+-- Dependencies: 175
+-- Data for Name: samochod; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY samochod (id, marka, model, rok, paliwo, cenadobowa) FROM stdin;
+1	AUDI	A3	2020	DIESEL	150
+2	BMW	Serie1	2020	BENZYNA	150
+3	OPEL	ASTRA	2020	DIESEL	100
+4	OPEL	INSYGNIA	2019	DIESEL	150
+5	BMW	X5	2020	DIESEL	200
+6	TOYOTA	RAV4	2020	DIESEL	200
+7	AUDI	RS3	2019	BENZYNA	250
+8	MERCEDES	C KLASA	2020	BENZYNA	250
+9	VOLVO	S60	2019	BENZYNA	150
+10	MERCEDES	ML	2020	DIESEL	200
+11	AUDI	A4	2020	DIESEL	150
+\.
+
+
+--
+-- TOC entry 2012 (class 0 OID 32908)
+-- Dependencies: 173
+-- Data for Name: uzytkownik; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY uzytkownik (id, imie, nazwisko, haslo, email, pesel, telefon) FROM stdin;
+1	Dawid	Nowakowski	DawNow55	dawid.nowakowski@gmail.com	88073095233	537952145
+2	Jacek	Kaczmarek	JacKac35	jacek.kaczmarek@gmail.com	85122219112	768335679
+3	Marek	Kamiński	MarKam24	marek.kamiński@gmail.com	95100188671	892413523
+4	Robert	Zawadzki	RobZaw72	robert.zawadzki@gmail.com	84071093433	867345871
+5	Piotr	Jankowski	PioJan28	piotr.jankowski@gmail.com	99052988576	899537754
+6	Karol	Kowalski	KarKow55	karol.kowalski@gmail.com	94082636231	782545375
+7	Patryk	Kowalczuk	PatKow55	patryk.kowalczuk@gmail.com	92082636231	123456789
+8	Kamil	Kowalski	KamKow88	kamil.kowalski@gmail.com	95060404132	862443523
+9	Roman	Boski	RomBos89	roman.boski@gmail.com	89120203456	693092506
+10	Daniel	Przybysz	DanPrz55	daniel.przybysz@gmail.com	92052204132	884560322
+\.
+
+
+--
+-- TOC entry 2015 (class 0 OID 32923)
+-- Dependencies: 176
+-- Data for Name: wypozyczenie; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY wypozyczenie (idwypozyczenia, idsamochodu, idosoby, kwota, datawypozyczenia, dataoddania) FROM stdin;
+1	1	1	150	2020-10-05	2020-10-06
+2	3	2	450	2020-11-14	2020-11-16
+3	5	3	1200	2020-11-04	2020-11-09
+4	2	4	1400	2020-11-24	2020-11-30
+5	6	1	800	2021-01-24	2021-01-27
+6	8	1	2250	2021-02-07	2021-02-15
+7	5	1	600	2021-01-23	2021-01-25
+8	9	3	450	2021-01-25	2021-01-27
+9	9	1	450	2021-01-29	2021-01-31
+10	11	1	600	2021-01-28	2021-01-31
+11	6	9	600	2021-02-01	2021-02-03
+12	11	10	300	2021-02-07	2021-02-08
+\.
+
+
+--
+-- TOC entry 1898 (class 2606 OID 32922)
+-- Name: Samochod_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY samochod
+    ADD CONSTRAINT "Samochod_pkey" PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1896 (class 2606 OID 32917)
+-- Name: pracownik_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY pracownik
+    ADD CONSTRAINT pracownik_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1894 (class 2606 OID 32912)
+-- Name: uzytkownik_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY uzytkownik
+    ADD CONSTRAINT uzytkownik_pkey PRIMARY KEY (id);
+
+
+--
+-- TOC entry 1900 (class 2606 OID 32927)
+-- Name: wypozyczenie_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY wypozyczenie
+    ADD CONSTRAINT wypozyczenie_pkey PRIMARY KEY (idwypozyczenia);
+
+
+--
+-- TOC entry 1901 (class 2606 OID 32928)
+-- Name: wypozyczenie_idosoby_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY wypozyczenie
+    ADD CONSTRAINT wypozyczenie_idosoby_fkey FOREIGN KEY (idosoby) REFERENCES uzytkownik(id);
+
+
+--
+-- TOC entry 1902 (class 2606 OID 32933)
+-- Name: wypozyczenie_idsamochodu_fkey; Type: FK CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY wypozyczenie
+    ADD CONSTRAINT wypozyczenie_idsamochodu_fkey FOREIGN KEY (idsamochodu) REFERENCES samochod(id);
+
+
+--
+-- TOC entry 2022 (class 0 OID 0)
+-- Dependencies: 6
+-- Name: public; Type: ACL; Schema: -; Owner: postgres
+--
+
+REVOKE ALL ON SCHEMA public FROM PUBLIC;
+REVOKE ALL ON SCHEMA public FROM postgres;
+GRANT ALL ON SCHEMA public TO postgres;
+GRANT ALL ON SCHEMA public TO PUBLIC;
+
+
+-- Completed on 2021-02-02 03:10:41
+
+--
+-- PostgreSQL database dump complete
+--
+
